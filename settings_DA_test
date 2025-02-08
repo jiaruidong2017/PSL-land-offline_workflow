@@ -25,12 +25,12 @@ DAalg=2DVar
 analVar=snow
 
 # JEDI input obs. options : IMS, GHCN, GTS, SYNTH 
-OBS_TYPES=("IMS" "GHCN"  )   # format: ("OBS1" "OBS2") 
+OBS_TYPES=("GTS")   # format: ("OBS1" "OBS2") 
 # JEDI call type for each obs_type above. options: DA, HOFX
-JEDI_TYPES=("DA" "DA" )   # format ("DA" "HOFX") 
+JEDI_TYPES=("DA")   # format ("DA" "HOFX") 
 
 #  DA window lenth. Will generally be the same as the FCSTLEN 
-WINLEN=24
+WINLEN=6
 
 # YAMLS. Options, either:
 # 1. "construct" to construct the YAML name, based on requested obs types and their availability 
@@ -43,6 +43,7 @@ YAML_HOFX=construct
 #OBSDIR= # to override default OBSDIR
 
 # OPTIONAL : CLEAN UP 
-SAVE_IMS="YES"
+##SAVE_IMS="YES"
+SAVE_ANL="YES"
 SAVE_INCR="YES"
-KEEPJEDIDIR="YES"
+##KEEPJEDIDIR="YES"
